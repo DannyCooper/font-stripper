@@ -24,10 +24,10 @@
 			<property name="minimum_supported_version" value="5.9"/>
 		</properties>
 
-		<!-- WPCS demands long arrays. YoastCS demands short arrays. -->
-		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+		<!-- WPCS demands long arrays. This plugin demands short arrays. -->
+		<exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
 
-		<!-- Demanding Yoda conditions is stupid. -->
+		<!-- Demanding Yoda conditions is not ideal. -->
 		<exclude name="WordPress.PHP.YodaConditions"/>
 
 		<!-- A while loop is the only valid control structure where an assignment can be justified. -->
@@ -40,6 +40,5 @@
 	</rule>
 
 	<!-- Add in some extra rules from other standards. -->
-	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
 	<rule ref="Generic.Commenting.Todo"/>
 </ruleset>

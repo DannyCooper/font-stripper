@@ -13,7 +13,15 @@ Removes inline font declarations from existing content.
 
 This plugin removes font-family, font-size, font-weight, line-height and color declarations from existing content.
 
-This can be useful if you have a lot of content with out of date styling. It also removes unwanted styles that may appear when copy and pasting from Microsoft Word or other text editors.
+This can be useful if you have published posts and pages with out of date styling. It also removes unwanted styles that may appear when copy and pasting from Microsoft Word or other text editors.
+
+**Before:**
+
+`<p style="font-weight: bold; font-size: 24px">Hello world.</p>`
+
+**After:**
+
+`<p>Hello world.</p>`
 
 == Changelog ==
 
